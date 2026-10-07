@@ -14,7 +14,7 @@ herzen=[]
 raketen = []
 
 leben=100
-anzahl_raketen = 10
+anzahl_raketen = 20
 
 
 def alien_erzeugen():
@@ -83,6 +83,7 @@ def update():
         if raumschiff.colliderect(herz):
             herzen.remove(herz)
             leben+=20
+            anzahl_raketen+=20
 
 
     for rakete in raketen:
